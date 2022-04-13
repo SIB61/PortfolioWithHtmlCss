@@ -164,6 +164,27 @@ transform: scale(100%);
 }
 
 @media only screen and (max-width:600px) {
+  header{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    position: fixed;
+    width: 94vw;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+  }
+  header ul{
+    visibility: hidden;
+  }
     .home{
         display: flex;
         justify-content:flex-end;

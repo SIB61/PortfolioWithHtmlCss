@@ -1,0 +1,229 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto';
+}
+body{
+    background: rgba(255, 255, 255, 0.5);
+
+ background-size:cover;
+ background-repeat: no-repeat;
+
+}
+header {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  position: fixed;
+  width: 94vw;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  
+}
+header p {
+  font-size: large;
+  font-weight: bold;
+  color: black;
+ 
+}
+
+.rout {
+  list-style: none;
+  display: flex;
+}
+.rout li {
+  margin: 0px 20px 0px 20px;
+}
+
+.rout li a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+  font-size: small;
+}
+.rout li a:hover {
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+}
+
+.rout li a img{
+    height: 20px;
+    margin: auto;
+}
+
+.home{
+
+    height: 100vh;
+    width: 100vw;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.homediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.home div h1{
+  color: black;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.home img{
+    height: 60vh;
+    animation: ani;
+    animation-duration: 3000ms;
+}
+
+@keyframes ani {
+   0%{
+       transform: scale(50%);
+   }
+   100%{
+transform: scale(100%);
+   }
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    
+}
+.skills div{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px 30px;
+}
+.skills div img{
+  height: 70px;
+  opacity: 0.7;
+}
+.skills div img:hover{
+  height: 70px;
+  opacity: 1;
+}
+.contacts{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+}
+.homebuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.hirebutton{
+   border: 0px;
+   border-radius: 5px;
+   background-color: black;
+   color: white;
+   height: 40px;
+   width: 100px;
+   font-weight: bold;
+   margin: 20px;
+}
+.contactbutton{
+   border-width: 0px;
+   border-radius: 5px;
+   background-color: white;
+   color: black;
+   height: 40px;
+   width: 100px;
+   font-weight: bold;
+   margin: 20px;
+}
+.contactbutton:hover{
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
+  color: black;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+@media only screen and (max-width:600px) {
+    .home{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-top: 100px;
+    }
+    .home img{
+        width: 70vw;
+        height: auto;
+    }
+}
+
+
+.achievements{
+  background-color: blueviolet;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.achimg{
+  height: 60vh;
+}
+
+.card {
+  background-color: white;
+  margin: 20px;
+  /* Add shadows to create the "card" effect */
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}
+
+/* Add some padding inside the card container */
+.container {
+  
+  padding: 2px 16px;
+}
+
+footer{
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer p{
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
